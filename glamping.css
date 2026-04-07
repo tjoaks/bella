@@ -1,0 +1,332 @@
+/* ==============================================
+   Bella — Glamping Page Styles
+   (Requires base.css to be loaded first)
+   ============================================== */
+
+/* ===== Back Link ===== */
+.back-link {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 100;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #fff;
+}
+
+/* ===== Shared Section Styles ===== */
+.g-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem;
+}
+
+.g-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.g-heading {
+  font-family: 'Great Vibes', 'Brush Script MT', cursive;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 400;
+  color: #2c2c2c;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+
+.g-subtext {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 300;
+  color: #6b6b6b;
+  text-align: center;
+  line-height: 1.8;
+  max-width: 650px;
+  margin: 0 auto 2.5rem;
+}
+
+.g-body {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1rem, 1.8vw, 1.15rem);
+  font-weight: 300;
+  color: #4a4a4a;
+  line-height: 1.9;
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Scroll Fade-in ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Section 1: Hero ===== */
+.g-hero {
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.g-hero__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('public/src/img/glamping-backdrop.webp');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.g-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(46, 51, 37, 0.55);
+  z-index: 1;
+}
+
+.g-hero__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.g-hero .g-heading {
+  color: #f5f0e8;
+}
+
+.g-hero .g-subtext {
+  color: rgba(245, 240, 232, 0.85);
+}
+
+/* ===== Section 2: Accommodations ===== */
+.g-accommodations {
+  background: #fff;
+}
+
+.g-acc__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+
+.g-acc__card {
+  text-align: center;
+}
+
+.g-acc__image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: #edeae5;
+  border: 2px dashed #d4cfc7;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.g-acc__image-label {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #b5ada3;
+}
+
+.g-acc__name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 0.5rem;
+}
+
+.g-acc__desc {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #5a5a5a;
+  line-height: 1.7;
+}
+
+/* ===== Section 3: Details & Booking ===== */
+.g-details-section {
+  background: #f4f2ed;
+}
+
+.g-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 3rem;
+  max-width: 650px;
+  margin: 0 auto 2.5rem;
+  text-align: left;
+}
+
+.g-details__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.g-details__label {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #9a9a9a;
+}
+
+.g-details__value {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #3a3028;
+  line-height: 1.5;
+}
+
+.g-cta {
+  text-align: center;
+}
+
+/* ===== Section 4: The Team ===== */
+.g-team {
+  background: #faf9f7;
+}
+
+.g-team__intro {
+  margin-bottom: 3.5rem;
+}
+
+.g-team__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.g-team__card {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.g-team__card--reverse {
+  flex-direction: row-reverse;
+}
+
+.g-team__photo {
+  flex-shrink: 0;
+  width: 180px;
+  height: 220px;
+  background: #edeae5;
+  border: 2px dashed #d4cfc7;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.g-team__photo-label {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #b5ada3;
+}
+
+.g-team__info {
+  flex: 1;
+}
+
+.g-team__name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 0.2rem;
+}
+
+.g-team__title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #9a9a9a;
+  margin-bottom: 0.8rem;
+}
+
+.g-team__bio {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #5a5a5a;
+  line-height: 1.8;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .g-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .g-acc__grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 1rem auto 0;
+  }
+
+  .g-details {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .g-team__card,
+  .g-team__card--reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .g-team__photo {
+    width: 150px;
+    height: 180px;
+  }
+
+  .back-link {
+    top: 1rem;
+    left: 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .g-section {
+    padding: 3rem 1rem;
+  }
+}

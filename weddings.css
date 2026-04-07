@@ -1,0 +1,307 @@
+/* ==============================================
+   Bella — Weddings Page Styles
+   (Requires base.css to be loaded first)
+   ============================================== */
+
+/* ===== Back Link ===== */
+.back-link {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 100;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #6b6b6b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #2c2c2c;
+}
+
+/* ===== Shared Section Styles ===== */
+.w-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem;
+}
+
+.w-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.w-heading {
+  font-family: 'Great Vibes', 'Brush Script MT', cursive;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 400;
+  color: #2c2c2c;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+
+.w-subtext {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 300;
+  color: #6b6b6b;
+  text-align: center;
+  line-height: 1.8;
+  max-width: 650px;
+  margin: 0 auto 2.5rem;
+}
+
+.w-body {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1rem, 1.8vw, 1.15rem);
+  font-weight: 300;
+  color: #4a4a4a;
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+
+/* ===== Scroll Fade-in ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Section 1: AI Design Studio ===== */
+.w-designer {
+  background: #fff;
+  text-align: center;
+}
+
+.w-designer__btn {
+  margin-bottom: 3rem;
+}
+
+.w-designer__preview {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  background: #f7f5f2;
+  border: 2px dashed #d4cfc7;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.w-designer__label {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #b5ada3;
+}
+
+/* ===== Section 2: Venue & Booking ===== */
+.w-venue {
+  overflow: hidden;
+}
+
+.w-venue__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('public/src/img/wedding-backdrop.webp');
+  background-size: cover;
+  background-position: center 65%;
+  z-index: 0;
+}
+
+.w-venue__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(245, 240, 232, 0.88);
+  z-index: 1;
+}
+
+.w-venue__content {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 4px;
+  padding: 4rem 3.5rem;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  text-align: center;
+}
+
+.w-venue__content .w-heading {
+  color: #3a3028;
+}
+
+.w-venue__content .btn {
+  margin-top: 0.5rem;
+}
+
+/* Details grid */
+.w-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 3rem;
+  margin: 2.5rem 0;
+  text-align: left;
+}
+
+.w-details__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.w-details__label {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #9a9a9a;
+}
+
+.w-details__value {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #3a3028;
+  line-height: 1.5;
+}
+
+/* ===== Section 3: The Team ===== */
+.w-team {
+  background: #faf9f7;
+}
+
+.w-team__intro {
+  margin-bottom: 3.5rem;
+}
+
+.w-team__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Team card — image left, text right */
+.w-team__card {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+/* Reversed card — image right, text left */
+.w-team__card--reverse {
+  flex-direction: row-reverse;
+}
+
+.w-team__photo {
+  flex-shrink: 0;
+  width: 180px;
+  height: 220px;
+  background: #edeae5;
+  border: 2px dashed #d4cfc7;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.w-team__photo-label {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #b5ada3;
+}
+
+.w-team__info {
+  flex: 1;
+}
+
+.w-team__name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 0.2rem;
+}
+
+.w-team__title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #9a9a9a;
+  margin-bottom: 0.8rem;
+}
+
+.w-team__bio {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #5a5a5a;
+  line-height: 1.8;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .w-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .w-venue__content {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .w-details {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  /* Stack team cards vertically on mobile */
+  .w-team__card,
+  .w-team__card--reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .w-team__photo {
+    width: 150px;
+    height: 180px;
+  }
+
+  .back-link {
+    top: 1rem;
+    left: 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .w-section {
+    padding: 3rem 1rem;
+  }
+
+  .w-venue__content {
+    padding: 2rem 1rem;
+  }
+}

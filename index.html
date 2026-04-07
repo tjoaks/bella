@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bella at Perry Mountain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-social">
+      <!-- Instagram -->
+      <a href="#" class="header-social__link" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="5"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+      <!-- Facebook -->
+      <a href="#" class="header-social__link" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+        </svg>
+      </a>
+      <!-- Pinterest -->
+      <a href="#" class="header-social__link" aria-label="Pinterest">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C6.48 2 2 6.48 2 12c0 4.08 2.46 7.58 5.97 9.1-.08-.72-.16-1.84.03-2.63.17-.71 1.12-4.74 1.12-4.74s-.29-.57-.29-1.41c0-1.32.77-2.31 1.72-2.31.81 0 1.2.61 1.2 1.34 0 .82-.52 2.04-.79 3.17-.22.95.47 1.72 1.41 1.72 1.69 0 2.99-1.78 2.99-4.36 0-2.28-1.64-3.87-3.98-3.87-2.71 0-4.3 2.03-4.3 4.13 0 .82.31 1.69.71 2.17.08.09.09.18.07.27-.07.3-.24.95-.27 1.08-.04.18-.14.22-.33.13-1.24-.58-2.01-2.39-2.01-3.85 0-3.13 2.27-6 6.56-6 3.44 0 6.12 2.46 6.12 5.74 0 3.42-2.16 6.17-5.15 6.17-1.01 0-1.95-.52-2.28-1.14l-.62 2.36c-.22.87-.83 1.96-1.24 2.62.93.29 1.92.44 2.95.44 5.52 0 10-4.48 10-10S17.52 2 12 2z"/>
+        </svg>
+      </a>
+      <!-- TikTok -->
+      <a href="#" class="header-social__link" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+        </svg>
+      </a>
+    </div>
+    <div class="header-brand">
+      <h1 class="brand-name">Bella</h1>
+      <p class="brand-at">at</p>
+      <p class="brand-location">Perry Mountain</p>
+    </div>
+    <nav class="header-nav">
+      <a href="#how-we-got-here" class="header-nav__link">How We Got Here</a>
+      <a href="#who-we-are" class="header-nav__link">Who We Are</a>
+      <a href="#where-we-are" class="header-nav__link">Where We Are Located</a>
+      <a href="#book-now" class="header-nav__link">Book Now</a>
+    </nav>
+  </header>
+
+  <main class="sections">
+    <section class="section section--weddings">
+      <div class="section__overlay"></div>
+    </section>
+
+    <section class="section section--glamping">
+      <div class="section__overlay"></div>
+      <div class="section__content">
+        <a href="glamping.html" class="btn btn--olive">Enter Bella for Glamping</a>
+      </div>
+    </section>
+
+    <section class="section section--events">
+      <div class="section__overlay"></div>
+      <div class="section__content">
+        <a href="events.html" class="btn btn--blue">Enter Bella for Events</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Wedding button lives outside sections so position:fixed works -->
+  <a href="weddings.html" class="btn btn--cream btn--wedding-fixed">Enter Bella for Weddings</a>
+
+  <!-- ===== Book Now ===== -->
+  <div id="book-now" class="hp-scroll-wrap">
+    <section class="hp-section hp-book">
+      <div class="hp-container hp-fade">
+        <h2 class="hp-heading">Book Your Experience</h2>
+        <p class="hp-subtext">
+          Whether it's a wedding, a weekend getaway, or a gathering to remember &mdash;
+          your time at Bella starts here. Browse our three signature experiences and find the
+          one that speaks to you.
+        </p>
+        <div class="hp-book__options">
+          <div class="hp-book__card">
+            <div class="hp-book__card-icon">
+              <div class="hp-placeholder-img hp-placeholder-img--sm"><span>Photo</span></div>
+            </div>
+            <h3 class="hp-book__card-title">Weddings</h3>
+            <p class="hp-book__card-desc">
+              Say your vows beneath century-old oaks with panoramic mountain views as your
+              backdrop. Our dedicated wedding team handles every detail &mdash; from florals
+              and catering to day-of coordination &mdash; so you can be fully present for
+              every moment.
+            </p>
+            <ul class="hp-book__card-features">
+              <li>Ceremony &amp; reception sites</li>
+              <li>Bridal suite with private garden</li>
+              <li>Up to 250 guests</li>
+              <li>AI venue design tool</li>
+            </ul>
+            <a href="weddings.html" class="btn btn--cream">Inquire About Weddings</a>
+          </div>
+          <div class="hp-book__card">
+            <div class="hp-book__card-icon">
+              <div class="hp-placeholder-img hp-placeholder-img--sm"><span>Photo</span></div>
+            </div>
+            <h3 class="hp-book__card-title">Glamping</h3>
+            <p class="hp-book__card-desc">
+              Disappear into the hillside without giving up a thing. Our luxury safari tents,
+              treehouses, and creekside cabins are outfitted with real beds, curated linens,
+              and private decks &mdash; all surrounded by 80 acres of untouched wilderness.
+            </p>
+            <ul class="hp-book__card-features">
+              <li>Three accommodation styles</li>
+              <li>Morning coffee &amp; pastries included</li>
+              <li>Guided hikes &amp; campfire dinners</li>
+              <li>Starting at $195 / night</li>
+            </ul>
+            <a href="glamping.html" class="btn btn--olive">Reserve Your Stay</a>
+          </div>
+          <div class="hp-book__card">
+            <div class="hp-book__card-icon">
+              <div class="hp-placeholder-img hp-placeholder-img--sm"><span>Photo</span></div>
+            </div>
+            <h3 class="hp-book__card-title">Events</h3>
+            <p class="hp-book__card-desc">
+              From corporate retreats to milestone birthdays, fundraising galas to intimate
+              dinner parties &mdash; Bella adapts to your vision. Multiple indoor and outdoor
+              spaces, full production support, and a team that lives for the details.
+            </p>
+            <ul class="hp-book__card-features">
+              <li>Up to 500 guests</li>
+              <li>Full catering kitchen &amp; AV</li>
+              <li>Dedicated event coordinator</li>
+              <li>AI venue design tool</li>
+            </ul>
+            <a href="events.html" class="btn btn--blue">Plan Your Event</a>
+          </div>
+        </div>
+        <div class="hp-book__footer">
+          <p class="hp-body">
+            Not sure which experience is right for you? Reach out and we'll help you
+            find the perfect fit. Every inquiry begins with a conversation &mdash; no
+            commitment, no pressure.
+          </p>
+          <a href="#" class="btn btn--cream">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== Who We Are ===== -->
+  <div id="who-we-are" class="hp-scroll-wrap">
+    <section class="hp-section hp-who">
+      <div class="hp-container hp-fade">
+        <h2 class="hp-heading">Who We Are</h2>
+        <p class="hp-subtext">
+          A small team with a big vision &mdash; rooted in hospitality, driven by craft,
+          and devoted to making every moment at Bella feel like home. We're not a faceless
+          venue company. We're the people you'll share coffee with on your site visit, the
+          ones adjusting the lanterns at dusk, the first to greet you and the last to leave.
+        </p>
+
+        <div class="hp-who__grid">
+          <div class="hp-who__card">
+            <div class="hp-who__photo"><span class="hp-who__photo-label">Photo</span></div>
+            <h3 class="hp-who__name">First Last</h3>
+            <p class="hp-who__title">Founder &amp; Creative Director</p>
+            <p class="hp-who__bio">
+              The dreamer who found the land and couldn't let it go. With a background in
+              interior design and a deep love for the outdoors, they turned a wildflower
+              field into one of the most sought-after venues in the region. When they're
+              not on-site, you'll find them sketching new ideas for the property.
+            </p>
+          </div>
+          <div class="hp-who__card">
+            <div class="hp-who__photo"><span class="hp-who__photo-label">Photo</span></div>
+            <h3 class="hp-who__name">First Last</h3>
+            <p class="hp-who__title">Operations Director</p>
+            <p class="hp-who__bio">
+              The backbone of every smooth-running day at Bella. They manage vendors,
+              timelines, and logistics with a calm precision that keeps everything on track.
+              Ten years in hospitality taught them that the best experiences look effortless
+              &mdash; and that takes serious effort behind the scenes.
+            </p>
+          </div>
+          <div class="hp-who__card">
+            <div class="hp-who__photo"><span class="hp-who__photo-label">Photo</span></div>
+            <h3 class="hp-who__name">First Last</h3>
+            <p class="hp-who__title">Event Coordinator</p>
+            <p class="hp-who__bio">
+              Your go-to person from the first inquiry to the last dance. They have an
+              uncanny ability to read a room, anticipate needs before they arise, and turn
+              stressful moments into seamless ones. Couples, corporate clients, and families
+              all say the same thing: "We couldn't have done it without them."
+            </p>
+          </div>
+          <div class="hp-who__card">
+            <div class="hp-who__photo"><span class="hp-who__photo-label">Photo</span></div>
+            <h3 class="hp-who__name">First Last</h3>
+            <p class="hp-who__title">Hospitality Manager</p>
+            <p class="hp-who__bio">
+              The warm smile waiting at check-in and the reason every guest feels like they
+              belong. From stocking the tents with fresh wildflowers to remembering your
+              coffee order, they believe that hospitality is in the smallest gestures. Before
+              Bella, they spent five years managing boutique hotels across the Southeast.
+            </p>
+          </div>
+        </div>
+
+        <div class="hp-who__values">
+          <h3 class="hp-who__values-heading">What Drives Us</h3>
+          <div class="hp-who__values-grid">
+            <div class="hp-who__value">
+              <h4 class="hp-who__value-title">Intention</h4>
+              <p class="hp-who__value-desc">
+                Every detail exists for a reason. From the way the trails wind to the angle
+                of the ceremony arch, nothing is accidental.
+              </p>
+            </div>
+            <div class="hp-who__value">
+              <h4 class="hp-who__value-title">Warmth</h4>
+              <p class="hp-who__value-desc">
+                We treat every guest like family. This isn't a transaction &mdash; it's a
+                relationship built on trust, care, and genuine excitement for your big moment.
+              </p>
+            </div>
+            <div class="hp-who__value">
+              <h4 class="hp-who__value-title">Craft</h4>
+              <p class="hp-who__value-desc">
+                We built this place by hand and we maintain it the same way. Quality shows in
+                the things most people never notice &mdash; and we notice everything.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== How We Got Here ===== -->
+  <div id="how-we-got-here" class="hp-scroll-wrap">
+    <section class="hp-section hp-story">
+      <div class="hp-story__bg"></div>
+      <div class="hp-story__overlay"></div>
+      <div class="hp-container hp-story__content hp-fade">
+        <h2 class="hp-heading">How We Got Here</h2>
+
+        <div class="hp-story__chapter">
+          <h3 class="hp-story__chapter-title">The Land</h3>
+          <p class="hp-body">
+            It started with a drive up a gravel road in the Smoky Mountains that didn't
+            seem to lead anywhere. Acres of rolling pasture, hardwood forest, and a ridgeline
+            that opened up to a view you could feel in your chest. The kind of place where you
+            stand still for a moment and forget what you were rushing toward.
+          </p>
+          <p class="hp-body">
+            We didn't know what Bella would become. We just knew we couldn't walk away from it.
+          </p>
+        </div>
+
+        <div class="hp-story__chapter">
+          <h3 class="hp-story__chapter-title">The Build</h3>
+          <p class="hp-body">
+            What started as weekend campfires with friends became blueprints on the kitchen
+            table. We cleared trails by hand, raised the first barn with help from neighbors,
+            and spent two full seasons getting the grounds ready before a single guest arrived.
+          </p>
+          <p class="hp-body">
+            We sourced reclaimed wood from a century-old tobacco barn in the next county.
+            The stone for the ceremony circle came from the creek that runs through the
+            property. Every material has a story, and every structure was placed with the
+            landscape &mdash; not against it.
+          </p>
+        </div>
+
+        <div class="hp-story__chapter">
+          <h3 class="hp-story__chapter-title">The First Season</h3>
+          <p class="hp-body">
+            Our first wedding was for close friends who believed in the vision before
+            the paint was dry. Forty guests, string lights strung between the oaks, and a
+            dance floor made of hand-laid flagstone. It wasn't perfect &mdash; the
+            generator cut out during the first dance and someone's dog got into the cake
+            &mdash; but every single person said it was the most beautiful wedding they'd
+            ever attended.
+          </p>
+          <p class="hp-body">
+            That was the night we knew Bella was exactly what it was supposed to be.
+          </p>
+        </div>
+
+        <div class="hp-story__chapter">
+          <h3 class="hp-story__chapter-title">Where We Are Now</h3>
+          <p class="hp-body">
+            Today, Bella hosts over fifty weddings a year, runs a glamping experience that
+            books out months in advance, and welcomes corporate groups, reunions, and
+            festivals to the mountain. We've grown, but we haven't changed. The same people
+            who cleared those first trails still greet you at the gate.
+          </p>
+          <p class="hp-body">
+            This is still a place built by hand, with heart, one season at a time. And we
+            want you to be part of the story.
+          </p>
+        </div>
+
+        <div class="hp-story__timeline">
+          <div class="hp-story__milestone">
+            <span class="hp-story__milestone-year">2019</span>
+            <span class="hp-story__milestone-text">Land acquired in Whittier, NC</span>
+          </div>
+          <div class="hp-story__milestone">
+            <span class="hp-story__milestone-year">2020</span>
+            <span class="hp-story__milestone-text">Trail clearing &amp; first barn raised</span>
+          </div>
+          <div class="hp-story__milestone">
+            <span class="hp-story__milestone-year">2021</span>
+            <span class="hp-story__milestone-text">First wedding season &mdash; 12 events</span>
+          </div>
+          <div class="hp-story__milestone">
+            <span class="hp-story__milestone-year">2022</span>
+            <span class="hp-story__milestone-text">Glamping experience launched</span>
+          </div>
+          <div class="hp-story__milestone">
+            <span class="hp-story__milestone-year">2023</span>
+            <span class="hp-story__milestone-text">Events program &amp; corporate retreats added</span>
+          </div>
+          <div class="hp-story__milestone">
+            <span class="hp-story__milestone-year">2024</span>
+            <span class="hp-story__milestone-text">AI venue design tool introduced</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== Where We Are Located ===== -->
+  <div id="where-we-are" class="hp-scroll-wrap">
+    <section class="hp-section hp-location">
+      <div class="hp-container hp-fade">
+        <h2 class="hp-heading">Where We Are Located</h2>
+        <p class="hp-subtext">
+          Deep in the Great Smoky Mountains of western North Carolina &mdash;
+          where the world slows down and the ridgelines stretch as far as you can see.
+        </p>
+        <div class="hp-location__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3248.5!2d-83.2697425!3d35.4294298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885941bca0c801f3%3A0x28cdac75ee9d4eee!2sBella%20Fiaba%20Venue!5e0!3m2!1sen!2sus!4v1700000000000"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="hp-location__details">
+          <div class="hp-location__detail">
+            <span class="hp-location__detail-label">Address</span>
+            <span class="hp-location__detail-value">1 Feather Road, Whittier, NC 28789</span>
+          </div>
+          <div class="hp-location__detail">
+            <span class="hp-location__detail-label">From Asheville</span>
+            <span class="hp-location__detail-value">Approximately 1 hour west via I-40</span>
+          </div>
+          <div class="hp-location__detail">
+            <span class="hp-location__detail-label">Nearest Airport</span>
+            <span class="hp-location__detail-value">Asheville Regional (AVL) &mdash; 60 miles</span>
+          </div>
+          <div class="hp-location__detail">
+            <span class="hp-location__detail-label">From Atlanta</span>
+            <span class="hp-location__detail-value">Approximately 3 hours north via I-85 &amp; I-40</span>
+          </div>
+          <div class="hp-location__detail">
+            <span class="hp-location__detail-label">From Knoxville</span>
+            <span class="hp-location__detail-value">Approximately 2 hours south via US-441</span>
+          </div>
+          <div class="hp-location__detail">
+            <span class="hp-location__detail-label">Coordinates</span>
+            <span class="hp-location__detail-value">35.4294&deg;N, 83.2678&deg;W</span>
+          </div>
+        </div>
+        <div class="hp-location__directions">
+          <h3 class="hp-location__directions-heading">Getting Here</h3>
+          <p class="hp-body">
+            From Asheville, take I-40 West toward Waynesville, then continue on US-74 West
+            through the Tuckasegee River valley. Just past Whittier, turn onto Feather Road.
+            You'll know you're close when the road narrows and the mountains close in around you.
+            We'll send a pin and detailed directions when you book.
+          </p>
+          <p class="hp-body">
+            The drive is part of the experience &mdash; winding through the Smokies with
+            rivers running alongside the road, mist settling in the valleys, and ridgelines
+            rising in every direction. By the time you arrive, the rest of the world feels
+            very far away.
+          </p>
+          <a href="https://www.google.com/maps/place/Bella+Fiaba+Venue/@35.4294332,-83.2697425,17.34z/" class="btn btn--cream" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
