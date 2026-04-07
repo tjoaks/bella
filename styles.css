@@ -147,12 +147,6 @@
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  filter: brightness(0.3);
-  transition: filter 0.8s ease;
-}
-
-.section.in-view {
-  filter: brightness(1);
 }
 
 .section--weddings {
@@ -179,13 +173,28 @@
   background-image: url('public/src/img/event-backdrop.webp');
 }
 
-/* --- Panel overlays --- */
+/* --- Dark overlay (replaces filter:brightness to avoid mobile resize bug) --- */
+.section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0.7;
+  transition: opacity 0.8s ease;
+  z-index: 1;
+}
+
+.section.in-view::before {
+  opacity: 0;
+}
+
+/* --- Color overlays --- */
 .section__overlay {
   position: absolute;
   inset: 0;
   opacity: 0;
   transition: opacity 0.4s ease;
-  z-index: 1;
+  z-index: 2;
 }
 
 .section.in-view .section__overlay {
@@ -206,7 +215,7 @@
 
 .section__content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 /* --- Wedding button (fixed to viewport center) --- */
