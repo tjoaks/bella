@@ -713,8 +713,9 @@
 /* --- Tablet & smaller --- */
 @media (max-width: 768px) {
 
-  /* Header */
+  /* Header — normal flow on mobile, no fixed positioning */
   .site-header {
+    position: relative;
     padding: 1rem 1rem 1rem;
   }
 
@@ -752,11 +753,6 @@
     height: 17px;
   }
 
-  /* Header — sits behind sections on mobile, no fade animation */
-  .site-header {
-    z-index: 0;
-  }
-
   /* Hero panels */
   .btn--wedding-fixed {
     padding: 0.9rem 1.6rem;
@@ -770,9 +766,13 @@
     background-position: center 60%;
   }
 
-  /* Disable overlay transitions on mobile for performance */
-  .section::before,
+  /* Kill all overlay animation on mobile — static only */
+  .section::before {
+    display: none;
+  }
+
   .section__overlay {
+    opacity: 1;
     transition: none;
   }
 
@@ -832,6 +832,7 @@
   .section--glamping,
   .section--events {
     height: 100vh;
+    height: 100svh;
     min-height: 300px;
   }
 }
