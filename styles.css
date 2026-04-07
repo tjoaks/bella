@@ -151,6 +151,7 @@
 
 .section--weddings {
   height: 100vh;
+  height: 100svh;
   z-index: 1;
   background-color: #3a3028;
   background-image: url('public/src/img/wedding-backdrop-noblur.webp');
@@ -159,6 +160,7 @@
 
 .section--glamping {
   height: 100vh;
+  height: 100svh;
   z-index: 2;
   box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.25);
   background-color: #2e3325;
@@ -167,6 +169,7 @@
 
 .section--events {
   height: 100vh;
+  height: 100svh;
   z-index: 3;
   box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.25);
   background-color: #252e35;
