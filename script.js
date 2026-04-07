@@ -21,15 +21,16 @@
   window.addEventListener('DOMContentLoaded', setHeaderHeight);
   window.addEventListener('resize', setHeaderHeight);
 
-  /* --- Fade header on scroll --- */
+  /* --- Fade header on scroll (desktop only) --- */
   function initHeaderFade() {
+    if (window.innerWidth <= 768) return;
+
     var header = document.querySelector('.site-header');
     if (!header) return;
 
     window.addEventListener('scroll', function () {
       var scrollY = window.scrollY || window.pageYOffset;
       var fadeDistance = header.offsetHeight * 0.5;
-      // Fade and blur over half the header height (faster)
       var progress = Math.min(scrollY / fadeDistance, 1);
       var opacity = 1 - progress;
       var blur = progress * 12;

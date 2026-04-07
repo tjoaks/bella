@@ -752,6 +752,11 @@
     height: 17px;
   }
 
+  /* Header — sits behind sections on mobile, no fade animation */
+  .site-header {
+    z-index: 0;
+  }
+
   /* Hero panels */
   .btn--wedding-fixed {
     padding: 0.9rem 1.6rem;
@@ -763,6 +768,12 @@
 
   .section--weddings {
     background-position: center 60%;
+  }
+
+  /* Disable overlay transitions on mobile for performance */
+  .section::before,
+  .section__overlay {
+    transition: none;
   }
 
   /* Content sections */
